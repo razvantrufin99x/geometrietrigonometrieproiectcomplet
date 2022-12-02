@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{80973661-7CC9-4C29-9F4F-0456659192B3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>geometrietrigonometrieproiectcomplet</RootNamespace>
+    <AssemblyName>geometrietrigonometrieproiectcomplet</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="graphiccontrol">
+      <HintPath>..\..\..\src3\graphiccontrol\graphiccontrol\bin\Debug\graphiccontrol.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="animatie.cs" />
+    <Compile Include="ansamblu.cs" />
+    <Compile Include="arc.cs" />
+    <Compile Include="bara.cs" />
+    <Compile Include="baraorizontala.cs" />
+    <Compile Include="baraverticala.cs" />
+    <Compile Include="bezier.cs" />
+    <Compile Include="bolta.cs" />
+    <Compile Include="boxa.cs" />
+    <Compile Include="cale.cs" />
+    <Compile Include="caracter.cs" />
+    <Compile Include="cerc.cs" />
+    <Compile Include="cifra.cs" />
+    <Compile Include="cilindru.cs" />
+    <Compile Include="conice.cs" />
+    <Compile Include="conul.cs" />
+    <Compile Include="coordonata.cs" />
+    <Compile Include="corp.cs" />
+    <Compile Include="corpderotatie.cs" />
+    <Compile Include="cub.cs" />
+    <Compile Include="curba.cs" />
+    <Compile Include="desen.cs" />
+    <Compile Include="desentehnic.cs" />
+    <Compile Include="dimensiune.cs" />
+    <Compile Include="document.cs" />
+    <Compile Include="dotcontrol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="dotcontrol.Designer.cs">
+      <DependentUpon>dotcontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dreapta.cs" />
+    <Compile Include="dreptunghi.cs" />
+    <Compile Include="ecuatie.cs" />
+    <Compile Include="elipsa.cs" />
+    <Compile Include="fata.cs" />
+    <Compile Include="figura.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forma.cs" />
+    <Compile Include="functie.cs" />
+    <Compile Include="geometrie.cs" />
+    <Compile Include="grafic.cs" />
+    <Compile Include="grila.cs" />
+    <Compile Include="harta.cs" />
+    <Compile Include="hiperbola.cs" />
+    <Compile Include="inel.cs" />
+    <Compile Include="instrument.cs" />
+    <Compile Include="linie.cs" />
+    <Compile Include="liniefranta.cs" />
+    <Compile Include="material.cs" />
+    <Compile Include="model.cs" />
+    <Compile Include="mul.cs" />
+    <Compile Include="ngon.cs" />
+    <Compile Include="numar.cs" />
+    <Compile Include="obiect.cs" />
+    <Compile Include="oval.cs" />
+    <Compile Include="ovoid.cs" />
+    <Compile Include="pagina.cs" />
+    <Compile Include="panza.cs" />
+    <Compile Include="parabola.cs" />
+    <Compile Include="paralelogram.cs" />
+    <Compile Include="patrat.cs" />
+    <Compile Include="patrulater.cs" />
+    <Compile Include="piramida.cs" />
+    <Compile Include="pixel.cs" />
+    <Compile Include="plan.cs" />
+    <Compile Include="poliedru.cs" />
+    <Compile Include="poligon.cs" />
+    <Compile Include="pozitie.cs" />
+    <Compile Include="prisma.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="proiectie.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="punct.cs" />
+    <Compile Include="racord.cs" />
+    <Compile Include="regiune.cs" />
+    <Compile Include="romb.cs" />
+    <Compile Include="scara.cs" />
+    <Compile Include="schita.cs" />
+    <Compile Include="sectiune.cs" />
+    <Compile Include="segment.cs" />
+    <Compile Include="semidreapta.cs" />
+    <Compile Include="semiplan.cs" />
+    <Compile Include="sfera.cs" />
+    <Compile Include="spatiu.cs" />
+    <Compile Include="standard.cs" />
+    <Compile Include="stea.cs" />
+    <Compile Include="stil.cs" />
+    <Compile Include="suprafata.cs" />
+    <Compile Include="tabel.cs" />
+    <Compile Include="tetraedru.cs" />
+    <Compile Include="text.cs" />
+    <Compile Include="trapez.cs" />
+    <Compile Include="trigonometrie.cs" />
+    <Compile Include="triunghi.cs" />
+    <Compile Include="trunchidepiramida.cs" />
+    <Compile Include="tub.cs" />
+    <Compile Include="unghi.cs" />
+    <Compile Include="varf.cs" />
+    <Compile Include="vector.cs" />
+    <Compile Include="vedere.cs" />
+    <Compile Include="vertex.cs" />
+    <Compile Include="zona.cs" />
+    <EmbeddedResource Include="dotcontrol.resx">
+      <DependentUpon>dotcontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
